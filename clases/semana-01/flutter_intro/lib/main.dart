@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_intro/widgets/custom_input.dart';
 
 void main() {
   runApp(const MainApp());
@@ -9,10 +10,23 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
+        appBar: AppBar(title: Text('Login Page')),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            CustomInput(label: 'Email', hide: false),
+            CustomInput(label: 'Password', hide: true),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10),
+              child: SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(onPressed: () {}, child: Text('Login')),
+              ),
+            ),
+          ],
         ),
       ),
     );
