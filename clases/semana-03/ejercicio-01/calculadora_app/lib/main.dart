@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.end,
-                    children: [Text('0', style: TextStyle(fontSize: 60))],
+                    children: [Text('1+1', style: TextStyle(fontSize: 60))],
                   ),
                 ),
                 Row(

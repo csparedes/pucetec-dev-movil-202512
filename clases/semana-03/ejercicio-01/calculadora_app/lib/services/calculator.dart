@@ -13,7 +13,6 @@
 // calcular el subresultado
 
 // limpiar la calculadora
-
 // borrar el ultimo numero
 
 // cambiar toggle signo
